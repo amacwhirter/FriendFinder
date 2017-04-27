@@ -11,18 +11,18 @@ module.exports = function(app){
     app.post("/api/new", function(req, res) {
       //setup variables for finding match
         var newFriend = req.body;
-        var myScore = newFriend.scores;
+        var newScore = newFriend.scores;
         var total = 0;
         var bestMatch = 1000;
         var index = -1;
 
-        for(var i=0; i<friends.length; i++){
+        for(var i = 0; i < friends.length; i++){
             //Iterate through the whole list of friends already in database
             total = 0;
 
-            for(var j=0; j<myScore.length; j++){
+            for(var j = 0; j < newScore.length; j++){
                 //for each friend calculate the total value
-                var diff = Math.abs(myScore[j] - friends[i].scores[j]);
+                var diff = Math.abs(newScore[j] - friends[i].scores[j]);
                 total += diff;
             }
             if(total < bestMatch){
