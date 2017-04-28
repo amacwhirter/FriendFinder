@@ -181,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <p><a href="./api/friends">API Friends List</a> | <a href="https://github.com/amacwhirter/FriendFinder">GitHub Repo</a></p>
+        <p><a href="https://polar-citadel-94723.herokuapp.com/app/public/api/friends">API Friends List</a> | <a href="https://github.com/amacwhirter/FriendFinder">GitHub Repo</a></p>
     </div>
 
     <!--modal-->
@@ -211,7 +211,7 @@
             };
 
             alert("Searching for your match...");
-            $.post("./api/new", newFriend)
+            $.post("https://polar-citadel-94723.herokuapp.com/app/public/api/friends/new", newFriend)
                 .done(function(data) {
                     console.log(data);
                     $('#caption').text(data.name);
