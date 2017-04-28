@@ -8,7 +8,7 @@ module.exports = function(app){
         res.json(friends);
     });
 
-    app.post("/api/new", function(req, res) {
+    app.post("./api/new", function(req, res) {
       //setup variables for finding match
         var newFriend = req.body;
         var newScore = newFriend.scores;
