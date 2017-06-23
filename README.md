@@ -2,7 +2,9 @@
 Georgia Tech Week 13 - Friend Finder
 
  ```
-A compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+A compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will
+take in results your users' surveys, then compare their answers with those from other users. The app 
+will then display the name and picture of the user with the best overall match.
  ```
 
 ### Preview Site
@@ -39,8 +41,8 @@ The above command will install all the dependencies you need
 > npm install -g nodemon
 
 The above command will install nodemon globally for you
-nodemon will watch the files in the directory in which nodemon was started, and if any files c
-hange, nodemon will automatically restart your node application.
+nodemon will watch the files in the directory in which nodemon was started, and if any files 
+change, nodemon will automatically restart your node application.
 
 
 ###### Step 4
